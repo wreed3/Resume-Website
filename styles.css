@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&display=swap");
+
+:root {
+    --primary-color: navy;
+}
+
+#page-container {
+    position: relative;
+    min-height: 150vh;
+}
+
+#page-container2 {
+    position: relative;
+    min-height: 180vh;
+}
+
+#page-container3 {
+    position: relative;
+    min-height: 300vh;
+}
+
+#page-container4 {
+    position: relative;
+    min-height: 165vh;
+}
+
+
+#content-wrap {
+    padding-bottom: 2.5rem; /* Footer height */
+}
+
+#footer {
+    display: block;
+    /* margin-top: 35vw; */
+    background-image: linear-gradient(to right, whitesmoke, lightgray);
+    border-top-color: transparent;
+    padding: 3vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    bottom: 0;
+    width: 94%;
+    margin-top: 80vh;
+    z-index: 0;
+}
+
+.email {
+    position: absolute;
+    margin-left: 4vw;
+    margin-top: 10vh;
+    font-size: 1vw;
+    z-index: 5;
+    white-space: nowrap;
+}
+
+
+.copyright {
+    position: block;
+    position: relative;
+    z-index: 4;
+    margin-left: 60vw;
+    text-align: right;
+    width: 27%;
+    margin-bottom: -13vh;
+    font-size: 1vw;
+}
+
+.linkedin {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 5%;
+    position: block;
+    z-index: 4;
+    float: left;
+    margin-top: 8vh;
+    white-space: nowrap;
+    text-size-adjust: 100%;
+}
+
+.secondary-nav {
+    position: flex;
+    z-index: 2;
+    list-style-type: none;
+    float: right;
+    width: 40vw;
+    margin-right: 20vw;
+    overflow: hidden;
+    margin-top: 10vh;
+    align-content: center;
+}
+
+    .secondary-nav li {
+        display: block;
+        float: left;
+        font-size: 1vw;
+        width: 9vw;
+    }
+
+.footNav {
+    display: block;
+    font-size: 1vw;
+    width: 5vw;
+}
+
+.secondary-nav li a:hover {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.linkedin a:hover {
+    color: transparent;
+}
+
+body {
+    display: block;
+    margin: 8px;
+    background: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: block;
+    height: 30h;
+    background-image: linear-gradient(to right, transparent, lightgray);
+    padding: 0vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-left-radius: 71%;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 3vw;
+    margin-left: 5vw;
+    z-index: 3;
+}
+
+    .logo .w {
+        color: black;
+        font-size: 15vw;
+        letter-spacing: -4vw;
+        font-family: colonna mt;
+        font-weight: 300;
+        text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        vertical-align: 2vh;
+    }
+
+    .logo .r {
+        color: var(--primary-color);
+        font-size: 15vw;
+        letter-spacing: -1vw;
+        vertical-align: -0.7vw;
+        font-family: colonna mt;
+        font-weight: 300;
+        text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .logo .three {
+        font-size: 6vw;
+        margin-left: -3.5vw;
+        vertical-align: -4vh;
+        font-family: colonna;
+        font-weight: 700;
+        -webkit-text-fill-color: whitesmoke;
+        -webkit-text-stroke-color: black;
+        text-shadow: 2px 2px 4px #000000;
+        position: relative;
+        z-index: 0;
+    }
+
+.profilePic {
+    display: block;
+    margin-top: -20vw;
+    width: 20%;
+    height: auto;
+    margin-left: 20vw;
+    border-bottom-left-radius: 71%;
+    background-image: linear-gradient(to bottom, lightgray);
+    position: relative;
+    z-index: 3;
+}
+
+.name {
+    display: block;
+    margin-left: 40vw;
+    margin-bottom: 5vw;
+    margin-top: -15vw;
+    white-space: nowrap;
+}
+
+.wilbert {
+    font-size: 8vw;
+    color: black;
+    text-shadow: 2px 2px 4px lightgrey;
+}
+
+.reed {
+    font-size: 8vw;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px lightgrey;
+}
+
+.iii {
+    font-size: 8vw;
+    color: white;
+    -webkit-text-fill-color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+nav {
+    display: block;
+    position: relative;
+    background-image: var(--primary-color);
+    padding: 0vw;
+}
+
+.primary-nav {
+    position: relative;
+    z-index: 2;
+    list-style-type: none;
+    float: inline-end;
+    width: 63.5%;
+    padding-left: 0vw;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 36vw;
+    margin-top: -7vw;
+    background-image: -webkit-image-set();
+}
+
+.current {
+    background-color: black;
+}
+
+.primary-nav li {
+    display: block;
+    float: left;
+    font-size: 1.2vw;
+    width: 12.94vw;
+}
+
+    .primary-nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 0.5vw 1.059vw;
+        text-decoration: none;
+    }
+
+
+        .primary-nav li a:hover {
+            background-color: black;
+            color: white;
+        }
+
+.row:after {
+    content: "";
+    display: table;
+}
+
+.column {
+    display: block;
+    height: 100%;
+    margin-top: -22vw;
+    float: left;
+    width: 28%;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 2vw;
+    background-image: linear-gradient(to bottom, white, lightgray);
+    position: relative;
+    z-index: 0;
+}
+
+.welcome {
+    display: block;
+    text-align: center;
+    margin-top: 19vw;
+}
+
+.welcomeParagraph {
+    overflow: auto;
+    padding: 1vw;
+    text-align: justify;
+    width: 25vw;
+    height: 65vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.contact {
+    list-style-type: none;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 5vw;
+}
+
+li .contact:hover {
+    background-color: black;
+    color: white;
+}
+
+.main {
+    display: block;
+    text-align: justify;
+    overflow-y: auto scrollbar-width: thin;
+    margin-left: 32vw;
+    background-image: lightgray;
+    padding: 2vw;
+}
+
+.UM {
+    text-align: center;
+}
+
+.computerScienceCloud {
+    display: block;
+    width: 95%;
+    height: auto;
+    margin-left: 2vw;
+    position: relative;
+}
