@@ -1,0 +1,28 @@
+<header class="site-header" role="banner">
+  <div class="container">
+    <div class="header-content">
+      <div class="logo">
+        <a href="/" aria-label="Home">
+          <img src="/images/Block M.png" alt="University of Michigan Block M Logo" width="50" height="50">
+        </a>
+      </div>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          {% for item in site.navigation %}
+          <li class="nav-item">
+            <a href="{{ item.url }}" class="nav-link {{ page.url | isActive(item.url) }}" 
+               {% if page.url == item.url %}aria-current="page"{% endif %}>
+              {{ item.label }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

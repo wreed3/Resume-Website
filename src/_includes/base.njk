@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  {# SEO Meta Tags #}
+  <title>{{ title or site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="author" content="{{ site.author.name }}">
+  
+  {# Open Graph / Facebook #}
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ title or site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:image" content="{{ site.url }}/images/U of M.png">
+  
+  {# Twitter #}
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="twitter:title" content="{{ title or site.title }}">
+  <meta property="twitter:description" content="{{ description or site.description }}">
+  <meta property="twitter:image" content="{{ site.url }}/images/U of M.png">
+  
+  {# Canonical URL #}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  
+  {# Favicon #}
+  <link rel="icon" type="image/png" href="/images/Block M.png">
+  
+  {# Stylesheets #}
+  <link rel="stylesheet" href="/styles/main.css">
+  
+  {# Preconnect to external resources #}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  {# Theme color for mobile browsers #}
+  <meta name="theme-color" content="#00274C">
+  
+  {# Structured Data #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.url }}",
+    "sameAs": [
+      "{{ site.author.linkedin }}"
+    ]
+  }
+  </script>
+</head>
+<body>
+  {# Skip to main content for accessibility #}
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  {% include "header.njk" %}
+  
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+  
+  {% include "footer.njk" %}
+  
+  {# Scripts #}
+  <script src="/scripts/main.js" defer></script>
+</body>
+</html>

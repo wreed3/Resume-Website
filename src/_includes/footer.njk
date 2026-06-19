@@ -1,0 +1,39 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Connect</h3>
+        <div class="social-links">
+          {% if site.social.linkedin %}
+          <a href="{{ site.social.linkedin.url }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <img src="{{ site.social.linkedin.icon }}" alt="LinkedIn" width="32" height="32" loading="lazy">
+          </a>
+          {% endif %}
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          {% for item in site.navigation %}
+          <li>
+            <a href="{{ item.url }}">{{ item.label }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>University of Michigan</h3>
+        <div class="university-logos">
+          <img src="/images/UM alumni.png" alt="University of Michigan Alumni" width="100" height="50" loading="lazy">
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; {% year %} {{ site.author.name }}. All rights reserved.</p>
+      <p class="footer-note">Built with <a href="https://www.11ty.dev/" target="_blank" rel="noopener">Eleventy</a></p>
+    </div>
+  </div>
+</footer>
